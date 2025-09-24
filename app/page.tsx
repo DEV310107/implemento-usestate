@@ -67,10 +67,14 @@ export default function Page() {
           <input type="text" placeholder="mm/yy" />
           <input type="text" placeholder="CVV" />
         </div>
+        <div className='linha'>
+          < hr />
+        </div>
+        
         <div className="summary">
-          <p>Subtotal $1,668</p>
-          <p>Shipping $4</p>
-          <p>Total $1,672</p>
+          <p>Subtotal: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  $1,668</p>
+          <p>Shipping: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $4</p>
+          <p>Total: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;$1,672</p>
         </div>
         <button className="checkout-btn">Checkout →</button>
       </section>
