@@ -59,7 +59,7 @@ export default function Page() {
           <a href=""><img src="/master-card.png" alt="mastercard" /></a>
           <a href=""><img src="/visa.png" alt="visa" /></a>
           <a href=""><img src="/rupay.png" alt="ru pay" /></a>
-          <a href=""><img src="/see all.png" alt="see all" /></a>
+          <a href=""><img src="/see-all.png" alt="see all" /></a>
         </div>
         <input type="text" placeholder="Name on card" />
         <input type="text" placeholder="Card Number" />
