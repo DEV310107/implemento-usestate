@@ -1,64 +1,79 @@
-import style from 'style.css'
+import './style.css';
 
-export default function Home() {
+export default function Page() {
   return (
-    <main>
-      <nav className="nav-bar">
-        <img src="/flecha.png" alt="Ícone de flecha" />
-        <h4>Shopping Continue</h4>
-      </nav>
+    <main className="container">
+      <section className="cart-section">
 
-      <hr />
+        <button className="back-button"> <strong>&lt;</strong> &nbsp; Shopping Continue </button>
+        <hr />
+        <div className='txt2'>
+          <h2>Shopping cart</h2>
+          <p>You have 3 items in your cart</p>
+        </div>
+        
 
-      <div className="sub-title">
-        <h4>Shopping cart</h4>
-        <p>Você tem 3 itens no seu carrinho</p>
-      </div>
-
-
-
-
-
-       <div className="cards">
-        <div className="card">
-          <img src="/pizza.png" alt="Italy Pizza" className="card-img" />
-          <div className="card-info">
-            <h3>Italy Pizza</h3>
+        <div className="cart-item">
+          <img src="/pizza.png" alt="Italy Pizza" />
+          <div className="item-info">
+            <h4>Italy Pizza</h4>
             <p>Extra cheese and topping</p>
           </div>
-          <div className="card-actions">
-            <span className="quantity">1 ▲</span>
-            <span className="price">$681</span>
-            <button className="delete">🗑️</button>
+          <div className="item-actions">
+            <input type="number" value={1} min={1} />
+            <span>$681</span>
+            <button className="delete-btn">🗑️</button>
           </div>
         </div>
 
-        <div className="card">
-          <img src="/combo.png" alt="Combo Plate" className="card-img" />
-          <div className="card-info">
-            <h3>Combo Plate</h3>
+        <div className="cart-item">
+          <img src="/combo.png" alt="Combo Plate" />
+          <div className="item-info">
+            <h4>Combo Plate</h4>
             <p>Extra cheese and topping</p>
           </div>
-          <div className="card-actions">
-            <span className="quantity">1 ▲</span>
-            <span className="price">$681</span>
-            <button className="delete">🗑️</button>
+          <div className="item-actions">
+            <input type="number" value={1} min={1} />
+            <span>$681</span>
+            <button className="delete-btn">🗑️</button>
           </div>
         </div>
 
-        <div className="card">
-          <img src="/rice.png" alt="Spanish Rice" className="card-img" />
-          <div className="card-info">
-            <h3>Spanish Rice</h3>
+        <div className="cart-item">
+          <img src="/rice.png" alt="Spanish Rice" />
+          <div className="item-info">
+            <h4>Spanish Rice</h4>
             <p>Extra garlic</p>
           </div>
-          <div className="card-actions">
-            <span className="quantity">1 ▲</span>
-            <span className="price">$681</span>
-            <button className="delete">🗑️</button>
+          <div className="item-actions">
+            <input type="number" value={1} min={1} />
+            <span>$681</span>
+            <button className="delete-btn">🗑️</button>
           </div>
         </div>
-      </div>
+      </section>
+
+      <section className="card-section">
+        <h3>Card Details</h3>
+        <div className="card-types">
+          <a href=""><img src="/master-card.png" alt="mastercard" /></a>
+          <a href=""><img src="/visa.png" alt="visa" /></a>
+          <a href=""><img src="/rupay.png" alt="ru pay" /></a>
+          <a href=""><img src="/see all.png" alt="see all" /></a>
+        </div>
+        <input type="text" placeholder="Name on card" />
+        <input type="text" placeholder="Card Number" />
+        <div className="card-bottom">
+          <input type="text" placeholder="mm/yy" />
+          <input type="text" placeholder="CVV" />
+        </div>
+        <div className="summary">
+          <p>Subtotal $1,668</p>
+          <p>Shipping $4</p>
+          <p>Total $1,672</p>
+        </div>
+        <button className="checkout-btn">Checkout →</button>
+      </section>
     </main>
   );
 }
